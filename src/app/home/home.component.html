@@ -1,0 +1,16 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">Dashboard</h4>
+    <div class="card-body">
+        <h6>Articles</h6>
+        <button routerLink="/article" class="btn btn-primary" type="button" name="button">New Post</button>
+        <ul *ngIf="articles">
+            <li *ngFor="let article of articles">{{article.title}}</li>
+            <!-- <div *ngFor="let article of pageOfItems">{{article.title}}</div> -->
+        </ul>
+
+        <!-- <div class="card-footer pb-0 pt-3">
+          <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
+        </div> -->
+
+    </div>
+</div>
